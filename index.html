@@ -12,6 +12,14 @@
 	<link href="portfolio/css/ress.css" media="all" rel="stylesheet" type="text/css" />
 	<link href="portfolio/css/style.css" media="all" rel="stylesheet" type="text/css" />
 	<link rel="shortcut icon" href="portfolio/img/favicon.ico" />
+	<style type="text/css">
+		.kaiten{animation: loading 1s linear 0s infinite;}
+            @keyframes loading{
+                0%{transform: rotate(0deg);}
+                50%{transform: rotate(900deg);}
+                100%{transform: rotate(1800deg);}
+			}
+	</style>
 </head>
 
 <body>
@@ -40,7 +48,7 @@
 					<p class="main-visual-subtitle">PORTFOLIO</p>
 					<div class="main-visual-profile">
 						<p class="main-visual-img">
-							<img src="portfolio/img/profile.png" alt="自画像" />
+							<img class="kaiten" src="portfolio/img/profile.png" alt="自画像" />
 						</p>
 						<p class="main-visual-text">
 							ゲームが好きです<br>
