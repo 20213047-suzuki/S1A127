@@ -7,3 +7,6 @@ body{
 .header{
     z-index: 100;
 }
+.app{
+    font-size: 18px;
+}
