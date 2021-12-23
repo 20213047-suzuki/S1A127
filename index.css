@@ -3,10 +3,14 @@ body{
     height: 100vh;
     margin: 0;
     background-color: rgb(248, 151, 115);
+    text-align: center;
 }
 .header{
     z-index: 100;
 }
 .app{
     font-size: 18px;
+}
+.portfolioimg{
+    max-width: 25%;
 }
