@@ -11,7 +11,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined" rel="stylesheet">
 	<link href="portfolio/css/ress.css" media="all" rel="stylesheet" type="text/css" />
 	<link href="portfolio/css/style.css" media="all" rel="stylesheet" type="text/css" />
-	<link rel="shortcut icon" href="portfolio/img/favicon1.ico" />
+	<link rel="shortcut icon" href="portfolio/img/favicon2.ico" />
 	<link rel="stylesheet" href="index.css">
 	<style type="text/css">
 		.kaiten{animation: loading 1s linear 0s infinite;}
@@ -20,15 +20,40 @@
                 50%{transform: rotate(900deg);}
                 100%{transform: rotate(1800deg);}
 			}
-		.html{animation: loading 10s linear 0s infinite;}
-			@keyframes aaa{
-				/* 0%{background-position: 0 0;}
-				50%{background-position: -10% 0;}
-				100%{background-position: -20% 0;} */
-				0%{transform: scale(1.0)}
-				50%{transform: scale(1.5)}
-				100%{transform: scale(1.25)}
+		.html{animation: html 2s linear 0s infinite;}
+			@keyframes html{
+				0%{ transform: scale(1);}
+                50%{ transform: scale(1.5);}
+                100%{ transform: scale(0.75);}
 			} 
+		.Python{animation: Python 2s linear 0s infinite;}
+		@keyframes Python{
+			0%{transform: translate(0px,0px);}
+			25%{transform: translate(0px,40px);}
+			50%{transform: translate(0px,0px);}
+			75%{transform: translate(0px,-40px);}
+			100%{transform: translate(0px,0px);}
+		}
+		.java{animation: java 0.2s linear 0s infinite;}
+		@keyframes java{
+			0%{transform: translate(0px,30px);}
+			17%{transform: translate(30px,0px);}
+			33%{transform: translate(0px,-30px);}
+			50%{transform: translate(-30px,0px);}
+			67%{transform: translate(0px,-30px);}
+			83%{transform: translate(30px,0px);}
+			100%{transform: translate(0px,30px);}
+		}
+		.appstore{animation: appstore 0.8s linear 0s infinite;}
+		@keyframes appstore{
+			0%{transform: translate(0,-40px);}
+			17%{transform: translate(40px,40px);}
+			33%{transform: translate(-40px,-20px);}
+			50%{transform: translate(40px,-20px);}
+			67%{transform: translate(-40px,40px);}
+			83%{transform: translate(-40px,40px);}
+			100%{transform: translate(0,-40px);}
+		}
 	</style>
 </head>
 
@@ -54,8 +79,8 @@
 			<!-- main-visual -->
 			<div class="main-visual" id="about">
 				<div class="main-visual-inner">
-					<p class="main-visual-title">SUZUKI</p>
-					<p class="main-visual-subtitle">PORTFOLIO</p>
+					<p class="main-visual-title" style="color: red;">SUZUKI</p>
+					<p class="main-visual-subtitle" style="color: rgba(255, 196, 0, 0.897);">PORTFOLIO</p>
 					<div class="main-visual-profile">
 						<p class="main-visual-img">
 							<a href="https://livedoor.blogimg.jp/copipe_hozondojo/imgs/0/e/0ef11b18.jpg"><img class="kaiten" src="portfolio/img/profile.png" alt="自画像" /></a>
@@ -123,7 +148,7 @@
 							</div>
 						</div>
 						<div class="skill-item">
-							<p class="skill-img"><img src="portfolio/img/python-1.svg" alt=""></p>
+							<p class="skill-img"><img class="Python" src="portfolio/img/python-1.svg" alt=""></p>
 							<div class="skill-body">
 								<h3 class="skill-name">Python</h3>
 								<p class="skill-text">
@@ -131,7 +156,7 @@
 							</div>
 						</div>
 						<div class="skill-item">
-							<p class="skill-img"><img src="portfolio/img/java.svg" alt=""></p>
+							<p class="skill-img"><img class="java" src="portfolio/img/java.svg" alt=""></p>
 							<div class="skill-body">
 								<h3 class="skill-name">Java</h3>
 								<p class="skill-text">
@@ -139,7 +164,7 @@
 							</div>
 						</div>
 						<div class="skill-item">
-							<p class="skill-img"><img src="portfolio/img/apple-app-store.svg" alt=""></p>
+							<p class="skill-img"><img class="appstore" src="portfolio/img/apple-app-store.svg" alt=""></p>
 							<div class="skill-body">
 								<h3 class="skill-name">スマホアプリ</h3>
 								<p class="skill-text">
